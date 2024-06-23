@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>form validation </h1>
+    <form action="" onsubmit="return val()">
+        <label for="">name</label>
+        <input type="text" id="name" placeholder="enter your name "> <br>
+        <label for="">Email</label>
+        <input type="text" id="email" placeholder="enter your email"> <br>
+
+        <label for="">contact</label>
+        <input type="text" id="contact" placeholder="enter your number"> <br>
+        <label for="">pass</label>
+        <input type="text" id="pass" placeholder="enter your password"> <br>
+        <label for="">confirm</label>
+        <input type="text" id="cpass" placeholder="confirm password"> <br>
+        <br>
+        <input type="submit">
+    </form>
+
+
+    <script>
+        function val() {
+            let n = document.getElementById("name").value;
+            let e = document.getElementById("email").value;
+            let c = document.getElementById("contact").value;
+            let p = document.getElementById("pass").value;
+            let cp = document.getElementById("cpass").value;
+
+            if (n == "") {
+                alert("please enter number");
+                document.getElementById("name").focus()
+                return false
+            }
+            else if (e == "") {
+                alert("please enter email");
+                document.getElementById("email").focus()
+                return false
+            }
+            else if (c == "") {
+                alert("please enter your contact");
+                document.getElementById("contact").focus()
+                return false
+            }
+            else if (isNaN(c)) {
+
+                alert("please fill digits");
+                document.getElementById("contact").value.focus()
+                return false
+            }
+            else if (p == "") {
+                alert("please enter pass");
+                document.getElementById("pass").focus()
+                return false
+            }
+            else if (cp == "") {
+                alert("please confirm password");
+                document.getElementById("cpass").focus()
+                return false
+            }
+            else if (c.length != 10) {
+                alert("allowed 10 digit");
+                document.getElementById("contact").focus;
+                return false;
+            }
+            else if (!(e.includes("@"))) {
+                alert("please fill @");
+                document.getElementById("email").focus()
+                return false;
+            }
+            else if (!(p.match(/[!@#$%^&*()_=+]/))) {
+                alert("please fill one special character");
+                document.getElementById("pass").focus();
+                return false;
+            }
+            else if (p != cp) {
+                alert("mis math password");
+                document.getElementById("cpass").focus();
+                return false;
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

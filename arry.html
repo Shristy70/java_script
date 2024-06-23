@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- array is a object in js . array me multiple type ka data store karte h or in a single variable -->
+    <!-- arry is ynamic type in array let a = [2,34.4,'s',"shristy"] -->
+    <script>
+        // let a = [1, "shristy", 65];
+        // console.log(a);
+        // for (let i = 0; i < 3; i++) {
+        //     console.log(a[i]);
+        // }
+
+        let arr = [];
+        for (let i = 0; i < 5; i++) {
+            arr[i] = parseInt(prompt("enter a number"))
+        }
+        for (let aa of arr) {
+            console.log(aa);
+            //push function are used to add at the last
+            //pop are remove the array at end
+            //shift remove start array
+            //unsift arr add startion of array
+        }
+        arr.push(2, 4, 5);
+        // console.log(arr);
+        arr.pop();
+        console.log(arr);
+        arr.unshift(9);
+        console.log(arr);
+        arr.shift(9);
+        console.log(arr);
+    </script>
+</body>
+
+</html>

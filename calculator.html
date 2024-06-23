@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <form action="" onclick="fun()">
+
+        <label for="">height :</label>
+        <input type="text" placeholder="height" id="name"><br>
+        <label for="">weight</label>
+        <input type="text" placeholder="weight" id="email"><br>
+        <br>
+        <div id="result"></div>
+        <input type="submit">
+
+
+    </form>
+
+    <script>
+var bim;
+        let a = document.getElementById("name");
+        let b = document.getElementById("email");
+
+        let e = document.getElementById("result");
+
+        function show() {
+            alert("please fill the number")
+        }
+        function cal() {
+            let height = a.value;
+            let weight = a.value;
+            let res = e.value;
+            bim = weight / height ** 2;
+            result .innerHTML = bim;
+        }
+
+
+
+    </script>
+</body>
+
+</html>

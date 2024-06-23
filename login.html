@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body align="center">
+    <h1>Login page </h1>
+    <form action="" onclick="return log()">
+        <label for="">Username</label>
+        <input type="text" placeholder="Username" id="use"><br><br>
+        <label for="">password</label>
+        <input type="text" placeholder="password" id="p"><br><br>
+        <a href="#">forgot password ?</a><br><br>
+        <input type="submit">
+    </form>
+
+    <script>
+        function log() {
+            let a = document.getElementById("use").value;
+            let p = document.getElementById("p").value;
+
+
+            if (a == "") {
+                alert("fill your name")
+                document.getElementById("use").focus();
+                return false;
+            }
+            else if (p == "") {
+                alert("fill your password")
+                document.getElementById("p").focus();
+                return false;
+            }
+
+
+            else if (!(p.match(/[!@#$%^&*()_+)]/))) {
+                alert("please add special character");
+                document.getElementById("p").focus;
+                return false;
+            }
+
+
+
+        }
+
+        let bb = document.body;
+        bb.style.backgroundColor = "pink";
+        bb.style.padding = "30px";
+        bb.style.margin = "30px";
+        bb.style.fontSize = "20px";
+        let k = document.getElementById("bb");
+        k.style.padding = "10px";
+        k.style.paddingLeft = "50px";
+        k.style.paddingRight = "50px";
+        k.style.borderRadius = "30px";
+        k.style.fontSize = "25px";
+
+    </script>
+</body>
+
+</html>

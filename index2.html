@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index2.js">
+    <style>
+        div {
+            display: flex;
+            /* border: 2px solid black; */
+            background-color: rgb(255, 255, 255);
+            justify-content: space-around;
+
+        }
+
+        #div1 ul {
+            font-size: 45px;
+
+        }
+
+        #div1 li {
+            padding: 10px;
+            color: maroon;
+        }
+
+        #div2 {
+            /* border: 1px solid black; */
+            width: 500px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>helllo</h1>
+
+    <!-- <img src="group.jpg" alt="" height="400px" onmouseenter="fun()">
+    <img src="white1.jpg" alt="" height="400px" onmouseenter="fun1()">
+;''
+    <div>
+        <img src="group.jpg" alt="" height="400px" id="m">
+    </div>
+    <script>
+
+        function fun() {
+            let m = document.getElementById('m');
+            m.src = "group.jpg";
+        }
+        function fun1() {
+            let m = document.getElementById('m');
+            m.src = "white.jpg";
+        } -->
+
+    <div>
+        <div id="div1">
+            <ul>
+                <li onmouseenter="fun1()">Laptop</li>
+                <li onmouseenter="fun2()">Mobile</li>
+                <li onmouseenter="fun3()">AC</li>
+                <li onmouseenter="fun4()">Ear phone</li>
+                <li onmouseenter="fun5()">Fan</li>
+            </ul>
+        </div>
+        <div id="div2">
+            <img src="lap.jpeg" alt="" id="m">
+        </div>
+    </div>
+
+    <script>
+
+        function fun1() {
+            let m = document.getElementById('m');
+            m.src = "lap.jpeg";
+        }
+        function fun2() {
+            let m = document.getElementById('m');
+            m.src = "mob.jpeg";
+        }
+        function fun3() {
+            let m = document.getElementById('m');
+            m.src = "ac.jpeg";
+        }
+        function fun4() {
+            let m = document.getElementById('m');
+            m.src = "ear.jpeg";
+        }
+        function fun5() {
+            let m = document.getElementById('m');
+            m.src = "fan.jpg";
+        } 
+    </script>
+
+
+</body>
+
+</html>

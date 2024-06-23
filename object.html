@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // object is a data type multiple data ko store me store karte in key : value form 
+        // object we store multiple data.
+        // let obj = {
+
+        //key : value
+        //     st_name: "shristy",
+        //     st_age: 19,
+        //     st_roll: 101,
+        // }
+        // console.log(obj.st_age);
+
+
+        // let obj2 = {
+        //     name: prompt('enter you name'),
+        //     age: prompt('enter you age'),
+        // }
+
+        // console.log(obj2);  
+        let emploee = {
+            name: "shristy",
+            no: 1101,
+            page: 190,
+            employee: {
+                name: "shristy",
+                bank_salary: "bank of india",
+            },
+            emp_function: function obj() {
+                console.log("object function");
+            },
+            arr: ["shristy", "19", 1],
+        }
+        for (let k in emploee) {
+            console.log(k + "    " + emploee[k]);
+        }
+        for (let k in emploee) {
+            console.log(emploee.employee.bank_salary);
+        }
+        console.log(emploee.emp_function());
+
+        let k = Object.keys(emploee)
+        console.log(k);
+        let v = Object.values(emploee.employee)
+        console.log(v);
+        console.log(emploee.arr[1]);
+        
+    </script>
+</body>
+
+</html>

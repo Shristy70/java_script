@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js start</title>
+    <style>
+        /* div {
+            display: flex;
+            /* border: 2px solid black; 
+
+        /*      
+        #div2 {
+         border: 1px solid black;
+        width: 500px;
+        height: 400px;
+        } */
+        .main {
+            background-color: tomato;
+            color: white;
+        }
+    </style>
+</head>
+
+<body id="id">
+    <!-- <h1 id="content">MARVEL</h1>
+    <p id="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, corporis est. Hic doloribus exercitationem
+        facere id placeat nisi voluptatem! Obcaecati cumque, incidunt aliquam a at aut veritatis placeat debitis quidem?
+    </p>
+    <h2 class="h2">shristy gour</h2>
+    <h2 class="h2">shristy gour</h2>
+    <h2 class="h2">shristy gour</h2> -->
+    <!-- <ul>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+    </ul> -->
+    <!-- <img src="white.jpg" alt="" height="400px" id="img">
+
+    <h1 id="rohan">
+        Disturbing class..!
+    </h1>
+
+    <img src="group.jpg" alt="" id="img" width="700px">
+
+    <ul id="ul">
+        <li>shristy</li>
+        <li>Akansha</li>
+        <li>Shivansh</li>
+        <li>Aastha</li>
+        <li>Deepa</li>
+        <li>Rohan</li>
+    </ul> -->
+
+    <!-- <div id="div">
+
+    </div> -->
+    <!-- <h1>hello</h1>
+    <button onclick="fun1()" id="fun1">click me</button>
+    <button onclick="fun2()" id="fun2">click me</button>
+    <button onclick="fun3()" id="fun3">click me</button>
+    <button onclick="fun4()" id="fun4">click me</button>
+
+    <div>
+        <h2>shristy gour</h2>
+        <p id="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptates soluta explicabo eaque
+            veritatis recusandae quos ab eligendi suscipit sit doloribus, quasi excepturi unde impedit labore. Facere
+            tenetur cupiditate nulla.</p>
+        <button onclick="fun()">click me</button>
+        <button onclick="fun5()">click me</button>
+    </div>
+    <h2>home kaam</h2>
+    <button onclick="on()">click here</button>
+    <button onclick="on2()" id="on2">click me</button> -->
+    <!-- ------------------------------------------------------onclick and dblclick ============================= -->
+    <!-- <button ondblclick="fun1()">click</button>
+    <button onmouseenter="fun2()">mouseenter</button>
+    <button oncontextmenu="fun3()">right</button>
+    <button onmouseleave="fun4()">leave</button> -->
+    <!-- <h1 onmouseenter="fun()" onmouseleave="fin()">helooo sir</h1>
+    <p id="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis consequuntur excepturi cum, ipsa
+        quam totam quod deleniti atque placeat illo asperiores culpa odio repellendus nobis, blanditiis soluta dolorum
+        quaerat? Non.</p>
+
+
+
+
+
+
+
+ -->
+    <!-- <div id="div1">
+        <ul>
+            <li onmouseenter="fun1()"><img src="lap.jpeg" alt="" width="100px" height="100px"></li>
+            <li onmouseenter="fun2()"><img src="mob.jpeg" alt="" width="100px" height="100px"></li>
+            <li onmouseenter="fun3()"><img src="ac.jpeg" alt="" width="100px" height="100px"></li>
+            <li onmouseenter="fun4()"><img src="ear.jpeg" alt="" width="100px" height="100px"></li>
+            <li onmouseenter="fun5()"><img src="fan.jpg" alt="" width="100px" height="100px"></li>
+        </ul>
+    </div>
+
+    <div id="div2">
+        <img src="lap.jpeg" alt="" id="m" width="500px" height="400px">
+    </div>
+    </div>
+
+    <script>
+        function fun1() {
+            let m = document.getElementById('m');
+            m.src = "lap.jpeg";
+        }
+        function fun2() {
+            let m = document.getElementById('m');
+            m.src = "mob.jpeg";
+        }
+        function fun3() {
+            let m = document.getElementById('m');
+            m.src = "ac.jpeg";
+        }
+        function fun4() {
+            let m = document.getElementById('m');
+            m.src = "ear.jpeg";
+        }
+        function fun5() {
+            let m = document.getElementById('m');
+            m.src = "fan.jpg";
+        }
+    </script> -->
+
+    <div id="div1">
+        <h1>hey this is shri....</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa ab, dolorum, quis ex et at architecto
+            quas harum hic atque eum vero omnis itaque vitae placeat inventore animi? Doloremque.</p>
+
+        <button onclick="fun()">click here</button>
+        <button onclick="fun1()">click here</button>
+        <button onclick="fun3()">here</button>
+    </div>
+
+
+
+
+    <script>
+
+        function fun() {
+            let div1 = document.getElementById("div1");
+            div1.classList.add("main");
+
+        }
+        function fun1() {
+            let div1 = document.getElementById("div1");
+            div1.classList.remove("main");
+
+        }
+        function fun3() {
+            let div1 = document.getElementById("div1");
+            div1.classList.toggle("main");
+
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>

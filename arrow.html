@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="count">0</h1><br><br>
+    <button onclick="str()">start</button>
+    <button onclick="stp()">close</button>
+
+
+    <script>
+        var i;
+        function str() {
+            let a = 1;
+            let h = document.getElementById("count");
+            i = setInterval(() => {
+                h.innerHTML = a++
+            }, 1000)
+        }
+
+        function stp() {
+            clearInterval(i);
+        }
+
+
+        // setInterval(() => { return console.log("bye"); }, 5000);
+        // setInterval(function () {
+        //     console.log("hello shristy");
+        // }, 2000)
+    </script>
+</body>
+
+</html>

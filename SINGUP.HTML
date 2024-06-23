@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<body align="center">
+    <h1>sign up page</h1>
+    <form action="login.html" onsubmit="return sub()">
+        <label for="">Name :</label>
+        <input type="text" placeholder="enter your name" id="name"><br><br>
+        <label for=""> email:</label>
+        <input type="text" placeholder="enter your email" id="e"> <br><br>
+        <label for="">password :</label>
+        <input type="text" placeholder="enter your password" id="p"><br><br>
+        <label for=""> confirm password :</label>
+        <input type="text" placeholder="confirm password" id="cp"><br><br>
+        <input type="submit">
+    </form>
+
+    <script>
+        function sub() {
+            let n = document.getElementById("name").value;
+            let e = document.getElementById("e").value;
+            let p = document.getElementById("p").value;
+            let cp = document.getElementById("cp").value;
+
+            if (n == "") {
+                alert("fill your name");
+                document.getElementById("name").focus();
+                return false;
+            }
+            if (e == "") {
+                alert("fill your email");
+                document.getElementById("e").focus();
+                return false;
+            }
+            if (p == "") {
+                alert("fill your password");
+                document.getElementById("p").focus();
+                return false;
+            }
+            if (cp == "") {
+                alert("fill confirm pass");
+                document.getElementById("cp").focus();
+                return false;
+            }
+            else if (!(e.includes("@"))) {
+                alert("please enter @");
+                document.getElementById("e").focus();
+                return false;
+            }
+            else if (!(p.match(/[!@#$%^&*()_+)]/))) {
+                alert("please add special character");
+                document.getElementById("p").focus;
+                return false;
+            }
+            else if (!(p == cp)) {
+                alert("check confirm password");
+                document.getElementById("p").focus();
+                return false;
+            }
+
+
+        }
+        let b = document.body;
+        b.style.padding = "20px";
+        b.style.backgroundColor = "pink";
+
+    </script>
+
+</body>
+
+
+</html>

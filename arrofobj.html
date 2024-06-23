@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // let a = [{
+        //     namee: "shristy",
+        //     age: 19,
+        //     from: "bhopal"
+        // },
+        // {
+        //     namee: "rohan",
+        //     age: 21,
+        //     from: "bhopal"
+
+        // },
+        // {
+        //     namee: "ravikash",
+        //     age: 21,
+        //     from: "bhopal"
+        // }]
+        // console.log(a[0].namee);
+        // a.push({ namee: "rohannn", age: 12 });
+        // console.log(a);
+        // a.unshift({ namee: "akku", age: 13 });
+        // console.log(a);
+
+
+        // aray ke element ko acces ko acces karne ka kaam karte h  and return new array
+        let a = [{
+            namee: "shristy",
+            age: 19,
+            from: "bhopal"
+        },
+        {
+            namee: "rohan",
+            age: 121,
+            from: "bhopal"
+
+        },
+        {
+            namee: "ravikash",
+            age: 201,
+            from: "bhopal"
+        }]
+
+        // let b = a.map((i) => {
+        //     return i.age;
+        // })
+        // console.log(b);
+
+        //filter function run any specific condination and use call back functio
+
+        let arr = a.filter((e) => { return e.age > 100  });
+        console.log(arr);
+
+    </script>
+</body>
+
+</html>
