@@ -5,9 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #hi {
+            display: none;
+        }
+
+        #h {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
+    <img src="group.jpg" alt="" width="400px" id="img1">
+    <h1 id="hi">cybrom student</h1>
+    <!-- <img src="white1.jpg" alt="" width="400px" id="img2">
+    <h1 id="h">shristy gour</h1> -->
     <script>
 
         // let a = [{
@@ -34,22 +47,23 @@
 
 
         // aray ke element ko acces ko acces karne ka kaam karte h  and return new array
-        let a = [{
-            namee: "shristy",
-            age: 19,
-            from: "bhopal"
-        },
-        {
-            namee: "rohan",
-            age: 121,
-            from: "bhopal"
+        // let a = [{
+        //     namee: "shristy",
+        //     age: 19,
+        //     from: "bhopal"
+        // },
+        // {
+        //     namee: "rohan",
+        //     age: 121,
+        //     from: "bhopal"
 
-        },
-        {
-            namee: "ravikash",
-            age: 201,
-            from: "bhopal"
-        }]
+        // },
+        // {
+        //     namee: "ravikash",
+        //     age: 201,
+
+        //     from: "bhopal"
+        // }]
 
         // let b = a.map((i) => {
         //     return i.age;
@@ -58,8 +72,33 @@
 
         //filter function run any specific condination and use call back functio
 
-        let arr = a.filter((e) => { return e.age > 100  });
-        console.log(arr);
+        // let arr = a.filter((e) => { return e.age > 100  });
+        // console.log(arr);
+        let im = document.querySelector('#img1');
+        im.addEventListener("mouseenter", function () {
+            let h = document.querySelector('#hi');
+            h.style.display = "block";
+        })
+        let im2 = document.querySelector('#img2');
+        im.addEventListener("mouseenter", function () {
+            let h2 = document.querySelector('#h');
+            h2.style.display = "block";
+        })
+
+
+        let i = document.querySelector('#img1');
+        i.addEventListener("mouseleave", function () {
+            let h = document.querySelector('#hi');
+            h.style.display = "none";
+        })
+        let im3 = document.querySelector('#img2');
+        im3.addEventListener("mouseleave", function () {
+            let h2 = document.querySelector('#h');
+            h2.style.display = "none";
+        })
+
+
+
 
     </script>
 </body>

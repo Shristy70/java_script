@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>hellooo every one!</h1>
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum provident maxime blanditiis
+        asperiores! Veritatis eligendi temporibus magnam praesentium, laboriosam voluptates culpa fuga? Laudantium omnis
+        aliquid nobis corporis, exercitationem ipsa.</p>
+    <p id="p"><i>shristy..</i></p>
+    <h1>student list--</h1>
+    <ul>
+        <li>shristy</li>
+        <li>akku</li>
+        <li>priyansh</li>
+        <li>ravikash</li>
+        <li>aashta</li>
+    </ul>
+    <button class="btn"> okk </button>
+
+
+    <script>
+        let h = document.querySelector('h1');
+        h.style.backgroundColor = "pink";
+        h.addEventListener('click', function () {
+            h.style.backgroundColor = "red";
+        })
+        let p = document.querySelector('.p');
+        p.style.color = "purple";
+        p.style.backgroundColor = "pink";
+        p.style.fontSize = "30px";
+        let b = document.querySelector('button');
+        b.style.backgroundColor = "pink";
+        b.style.fontSize = '40px';
+        let id = document.querySelector("#p");
+        id.style.color = "red";
+        id.style.fontSize = '20px';
+        let u = document.querySelector('ul');
+        u.style.color = "red";
+        let u2 = document.querySelectorAll('li');
+        u2[0].addEventListener('mouseover', function () {
+            u2[0].style.backgroundColor = "red";
+            u2[1].style.backgroundColor = "purple";
+            u2[2].style.backgroundColor = "pink";
+            u2[3].style.backgroundColor = "blue";
+            u2[4].style.backgroundColor = "yellow";
+        })
+        u2[3].style.color = "green";
+        u2[0].style.color = "purple";
+        u2[2].style.color = "blue";
+        let btn = document.querySelector('.btn');
+        btn.addEventListener('click', function () {
+            alert("student list show ")
+        })
+
+    </script>
+</body>
+
+</html>
