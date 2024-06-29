@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="hi">0</h1>
+    <script>
+        let a = "shristy gour";
+        console.log(a.toUpperCase());
+        console.log(a.toLowerCase());
+        let s = " humko c++ nh ati ";
+        let sa = s.repeat(8);
+        console.log(sa.charAt(4));
+        // let dt = new Date();   //date function
+        // console.log(dt.toLocaleDateString())          local time show that is our laptop same as
+        //it is indexing type function 
+        // console.log(sa);
+        // let dt = new Date();
+        //date function
+        setInterval(() => {
+            let dt = new Date();
+            let a = dt.toLocaleTimeString();
+            let time = document.getElementById("hi");
+
+            time.innerHTML = a;
+        }, 1000);
+
+        // document.write(dt.toLocaleDateString())
+        // console.log(dt.toLocaleTimeString())
+        // console.log(dt.getFullYear());
+        // console.log(dt.getDate());
+        // console.log(dt.getMonth() + 1);
+    </script>
+</body>
+
+</html>
