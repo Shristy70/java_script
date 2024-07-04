@@ -1,0 +1,7 @@
+{
+   "student" : [
+        {"name" :"shristy", "course" : "web developer" ,"city" : "bhopal"},
+        {"name" :"rohan", "course" : "web developer" ,"city" : "bhopal"}, 
+        {"name" :"ravikesh", "course" : "web developer" ,"city" : "bhopal"}
+    ]
+}

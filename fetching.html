@@ -1,0 +1,28 @@
+<!-- fatch is a function return the promises and the promises  handle karne ke liye  work perform async and await. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>async function :-</h1>
+    <script>
+
+        async function demo() {
+            let a = await fetch("https://jsonplaceholder.typicode.com/posts")
+            let r = await a.json();
+            let map = r.map((i) => {
+                return i.id
+            })
+            console.log(map);
+
+        }
+        demo();
+    </script>
+</body>
+
+</html>
